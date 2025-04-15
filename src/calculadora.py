@@ -10,11 +10,7 @@ def es_par(n):
     return n % 2 == 0
 
 def factorial(n):
+    """Calcula el factorial de un número entero no negativo."""
     if n < 0:
         raise ValueError("El factorial no está definido para negativos")
-    if n == 0:
-        return 1
-    resultado = 1
-    for i in range(1, n + 1):
-        resultado *= i
-    return resultado
+    return 1 if n == 0 else n * factorial(n - 1)
