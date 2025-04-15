@@ -18,3 +18,7 @@ def factorial(n):
     for i in range(1, n + 1):
         resultado *= i
     return resultado
+
+def potencia(base, exponente):
+    """Calcula base elevada a exponente (entero)."""
+    return base ** exponente
